@@ -1,0 +1,97 @@
+body {background-color:black;
+	 font-family: Verdana, Arial, sans-serif;
+	 }
+header {background-color:maroon;
+    height: 130px;
+    margin-bottom: 0px;
+    background-image: url(Topimages/Background.jpg);
+    background-repeat: no-repeat;
+    background-position:right;
+}
+h1 {font-style:italic;
+    text-decoration-color:black;
+    font-size: 100px;
+    text-align:left;
+    font-family: Arial, sans-serif;
+
+}
+
+h2{color: chocolate;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    
+}
+
+nav {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    float: right;
+    width: 200px;
+}
+nav ul {list-style-type: none;
+    margin:0px;
+    padding: 0px;
+	  }
+nav a{
+    background-color:brown;
+    border-bottom: 1px solid white;
+    text-decoration:none;
+    padding: 20px;
+    display:block;
+	  }
+nav a:link{color:azure;}
+nav a:visited{color:antiquewhite;}
+nav a:hover{color:coral;
+    background-color:darkred;
+}
+main {background-color:black;
+	 color:whitesmoke;
+	 padding: 20px 20px;
+    overflow: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+	 }
+main ul{list-style-type: none;}
+main li{display:inline-grid;
+	  width: 400px;
+	  padding-bottom: 10px;
+	  margin: 10px;
+	  background-color:dimgray;
+	  text-align: center;
+	  font-style: italic;
+	  font-family: Georgia, serif;
+	}
+footer {font-size: .70em;
+        text-align: center;
+        color: #006600;
+        background-color: #ffffff;
+        padding-top: 10px;
+        clear: both;
+}
+
+
+@media only screen and (max-width: 1024px){
+    main{margin: 0px;}
+    body {margin: 0px;}
+    #container {min-width: auto;}
+    nav {float: none; width: auto;}
+    aside {float: none; width: auto;}
+    nav li {display: inline-block; padding: 0.5em;}
+    nav ul {text-align: center;}
+    h1, h2, h3 {font-size: 120%;}
+    p {font-size: 90%;}
+    nav img {display: none;}
+}
+
+@media only screen and (max-width: 768px){
+    #container{min-width: auto;}
+    h1, h2, h3 {font-size: 100%}
+    p, .news {font-size: 80%}
+    nav, nav ul, nav li {padding: 0px;}
+    nav li {display: block;}
+    nav a {display: block;
+        padding: 0.5em 0;
+        border-bottom: 2px ridge #00005d;}
+    img {display: none;}
+}
